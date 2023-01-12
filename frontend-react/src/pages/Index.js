@@ -73,9 +73,9 @@ function Index () {
                   {
                     heroes.map((hero) => {
                       return (
-                        <div key={hero.name}>
+                        <div className='hero-card' key={hero.name}>
                             <img src = {hero.image.url} className="hero-image"></img>
-                            <p>{hero.name}</p>
+                            <p className='hero-title'>{hero.name}</p>
                             <button onClick={() => viewSuperHeroDetails(hero)}>View details</button>
                         </div>
                       )
@@ -84,10 +84,10 @@ function Index () {
                 </div> : 
                 <div>
                     <button onClick={() => setIsSingleView(false)}>Go back</button>
-                    <div key={hero.name}>
+                    <div className='hero-card' key={hero.name}>
                       <img src = {hero.image.url} className="hero-image"></img>
-                      <p>{hero.name}</p>
-                      <h4>Power Stat details</h4>
+                      <p className='hero-title'>{hero.name}</p>
+                      <h4 className='hero-title'>Power Stats</h4>
                       <ul>
                         <li>Intelligence: { hero.powerstats.intelligence }</li>
                         <li>Strength: { hero.powerstats.strength }</li>
