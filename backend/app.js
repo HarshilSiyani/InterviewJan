@@ -29,12 +29,12 @@ async function initServer() {
 
     try {
         await mongoose.set('strictQuery', true);
-        await mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+        await mongoose.connect('mongodb+srv://admin:admin@cluster0.pudwmow.mongodb.net/SuperHeroDB?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true })
         console.log(`Database connected sucessfully`)
     } catch (err) {
         console.log(err)
     }
 
-    app.listen(PORT, () => console.log(`Server is running on port ${PORT}`))
+    app.listen(3001, () => console.log(`Server is running on port 3001: to access graphql go to /graphql`))
 }
 initServer();
