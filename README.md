@@ -11,12 +11,14 @@ https://ciyani.notion.site/VivaLeisure2023Jan-0a05e662c93844c09b254dcb246f0743
 
 To run the backend
 - cd backend
+- npm install
 - npm start
 
 Shoudl run at localhost:3001 and graphql GUI can be accessed at localhost:3001/graphql
 
 To run the frontend
 - cd frontend
+- npm install
 - npm start
 
 incase something isnt working well just try to ensure all the packages are installed.
