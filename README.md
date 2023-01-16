@@ -14,7 +14,7 @@ To run the backend
 - npm install
 - npm start
 
-Shoudl run at localhost:3001 and graphql GUI can be accessed at localhost:3001/graphql
+Should run at localhost:3001 and graphql GUI can be accessed at localhost:3001/graphql
 
 To run the frontend
 - cd frontend
